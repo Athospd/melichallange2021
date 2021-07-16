@@ -1,0 +1,34 @@
+---
+title: "Exploration"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploration}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(melichallange2021)
+library(tidyverse)
+```
+
+## test_data.csv
+
+```{r}
+test_data <- read.csv("../../datasets/melichallange2021/test_data.csv")
+glimpse(test_data)
+```
+## sample_submission.csv.gz
+
+```{r}
+sample_submission <- read.csv("../../datasets/melichallange2021/sample_submission.csv.gz", header = FALSE)
+glimpse(sample_submission)
+```
+
